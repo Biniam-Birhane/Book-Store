@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/foundation.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 style="color: grey">ጀነራል ሰዓረ መኮነንን ሜ/ጀነራል ገዛኢ አበራን መጻሕፍቲ ቤት</h1>
+            </div>
+            <div class="login">
+                <form class="form-group" method="POST" action="/manage/login">
+                    <p>username</p>
+                    <input type="text" class="form-control" name="username">
+                    <p>password</p>
+                    <input type="password" class="form-control" name="password">
+                    <input type="submit" class="btn btn-primary" value="submit">
+                    <input type="hidden" name="_csrf" value="{_csrf}">
+                </form>
+            </div>
+		</div>
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>book store &copy 2019</p>
+				</div>
+			</div>
+		</footer> 
+
+		<script src="/js/vendor/jquery.js"></script>
+		<script src="/js/foundation.min.js"></script>
+		<script src="/js/main.js"></script>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{>"layouts/manage"/}
+
+{<body}
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Add Books</h2>
+            <form method="post" action="/manage/books/edit/{book._id}">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Title</p> 
+                        <input name="title" type="text" value="{book.title}" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>author</p> 
+                        <input name="author" type="text" value="{book.author}" class="form-control"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>publisher</p> 
+                        <input name="publisher" type="text" value="{book.publisher}" class="form-control"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>price</p> 
+                        <input name="price" type="text" value="{book.price}" class="form-control"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>category</p> 
+                        <select name="category" class="form-control">
+                            {#categories}
+                                <option value="{.name}">{.name}</option>
+                            {/categories}
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>description</p> 
+                        <textarea name="description" class="form-control">{book.description}</textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>cover URL</p>
+                        <input name="cover" type="text" value="{book.cover}" class="form-control"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input class="btn btn-primary" type="submit" value="submit"> 
+                    </div>
+                </div>
+                <input type="hidden" name="_csrf" value="{_csrf}">
+            </form>
+        </div>
+    </div>
+{/body}

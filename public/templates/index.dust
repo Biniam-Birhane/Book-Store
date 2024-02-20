@@ -1,0 +1,16 @@
+{>"layouts/master"/}
+
+{<body}
+<!-- looping through the book and getting the values -->
+	{#books}
+		<div class="bbb">
+			<div class="col-lg-3 book">
+				<img src="/img/{.cover}" class="img">
+				<h4>{.title}</h4>
+				<p>{.truncText}</p>
+				<div class="">buy it for <span>{.price} birr</span></div>
+				<a href="/books/details/{._id}" class="btn btn-primary">book details</a>
+			</div>
+		</div>
+	{/books}
+{/body}

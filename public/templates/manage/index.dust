@@ -1,0 +1,11 @@
+{>"layouts/manage"/}
+
+{<body}
+	<div class="jumbotron">
+        <h2 style="font-size: 25px; text-align:center">እንኳዕ ብደሓን መጻእካ</h2>
+        <p style="font-size: 25px; text-align:center">እዚ ናይ ጀነራል ሰዓረ መኮነንን ሜ/ጀነራል ገዛኢ አበራን መጻሕፍቲ ቤት ኣድሚን ፔጅ እዩ</p>
+        {#user}
+        <p>hii {.password}</p>
+        {/user}
+    </div>
+{/body}
